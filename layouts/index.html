@@ -1,0 +1,4 @@
+{{/* https://discuss.gohugo.io/t/homepage-content-from-content-home-md/54/3 */}}
+{{ range where .Data.Pages "Title" "Home" }}
+  {{ template "_default/single.html" . }}
+{{ end }}
